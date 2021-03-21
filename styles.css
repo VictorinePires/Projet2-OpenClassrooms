@@ -4,43 +4,69 @@
          url('raleway-variablefont_wght-webfont.woff2') format('woff2');
      font-weight: normal;
      font-style: normal;
- 
- }
- body
- {
-      font-family: 'ralewaythin',Arial,serif;
- }
- #bloc_page{
-      width:900px;
-      margin:auto;
+}
 
- }
- #contener{
-     justify-content:flex-start;
-     align-items: flex-start;
- }
+body {
+     font-family: 'ralewaythin', Arial, sans-serif;
+}
 
- .image_petit
- {
-      width:auto;
-      height:40px;
- }
- nav ul{
-      list-style-type:none;
-      display:flex;
- }
- nav li{
-      margin-right:20px;    
- }
- nav a{
-      font-size:1.1em;
-      padding-bottom: 3px;
-      text-decoration: none;
- }
- .link{
-      color:#0065FC;
- }
- .blacklink{
-      color:#000000;
- }
- 
+#bloc_page{
+    width: 900px;
+    margin:auto;
+}
+
+#menu {
+     display: flex;
+     justify-content: space-between;
+     width:100%;
+}
+
+
+
+.reservia {
+     height:50px;
+     width :auto;
+}
+
+nav {
+     display:flex;
+     justify-content : space-around;
+     width :20%;
+}
+
+nav ul {
+     list-style-type: none;
+     display:flex;
+}
+nav li {
+   padding-right: 15px;
+}
+nav a {
+     text-decoration: none;
+     color:#000000;
+} 
+
+nav li :hover {
+     text-decoration: none;
+     color:blue;
+
+}
+
+.inscription {
+     text-decoration: none;
+    font-weight: bold;
+    color:#0065FC;
+}
+
+
+div {
+     display:block;
+}
+
+h1 {
+     font-size: 1.4em;
+}
+
+#conteneur p {
+   font-size: 1.1em;
+}
