@@ -224,7 +224,7 @@ div p {
      font-size: 11px;
      position: relative;
      left: 6px;
-     top: -2px;
+     bottom: 10%;
 }
 
 /*Première section de la page */ 
@@ -352,8 +352,9 @@ i {
      display: flex;
      flex-direction: row;
      align-items: center;
-     justify-content: space-around;
+     justify-content: space-between;
      height: 2%;
+     padding: 0px 18px;
 }
 
 /*Titre de la partie aside */
@@ -530,6 +531,7 @@ a:hover {
           margin-right: 2px;
      }
 
+     /*Propriété pour enlever barre de défilement de droite */
      html, body {
           overflow-x:hidden;
           }
@@ -548,22 +550,24 @@ a:hover {
      nav  {
           justify-content: space-between;
           order:2;
+          width: 100%;
+          margin-top: 18px;
      }
-
-     /*Liste à puces */
-     ul li {
-          margin-top:18px;
+ 
+     /*Liens de navigation du site au survol */
+     nav a:hover {
+          border-top: none;
      }
-
+     
      /*Liens hébergements et activités dans la partie nav */
-     nav .liste {
+     ul {
           padding-bottom: 20px;
           border-bottom: 3px solid #F2F2F2;
+          width: 100%;
      }
 
      /* Effets sur les liens au survol */
-     .liste:hover {
-          border-top: none;
+     ul:hover {
           border-bottom: 3px solid #0065FC;
           color: #0065FC;
      }
@@ -657,16 +661,13 @@ a:hover {
           background-color: white;
      }
 
-     #hebergements {
-          margin: 0px 10px;
-     }
-
      /*Liens dans la partie hébergements à Marseille */
      .box {
           width: 100%;
           margin: 0 0 20px 0;
      }
 
+     /*Images dans les liens des hébergements */
      .image-hebergement {
           width: 98%;
      }
@@ -706,31 +707,13 @@ a:hover {
 @media (min-width:768px) and (max-width:1023px) 
 {
 
+     /*Propriété pour enlever barre de défilement de droite */
      html, body {
           overflow-x:hidden;
           }
 
+      /*En tête de la page */
      header {
-          width:100%;
-     }
-
-     #conteneur {
-          width:100%;
-     }
-
-     #filtres {
-          width:100%;
-     }
-
-     #information {
-          width:100%;
-     }
-
-     .bloc-hebergements {
-          width:100%;
-     }
-
-     #activités {
           width:100%;
      }
 
@@ -745,20 +728,31 @@ a:hover {
           margin-top: 17px;
      }
 
-     /*Partie filtres */
+      /*Zone de recherche de la page */
+     #conteneur {
+          width:100%;
+     }
+
+     /*Div comprenant la partie filtres */
      #filtres {
+          width:100%;
           flex-wrap:wrap;
      }
 
      /*Div dans la partie filtres */
      #filtres div {
-          width:100%;
+          width: 100%;
      }
 
      /*Liens dans la partie filtres*/
      .lien {
           min-width: 30%;
           margin-bottom: 20px;
+     }
+
+     /*Div comprenant la partie informations */
+     #information {
+          width:100%;
      }
 
      /*Première section de la page */
@@ -771,11 +765,6 @@ a:hover {
      #plus-populaires {
           order: 1;
           width: 100%;
-     }
-
-     /*Titre de la partie aside */
-     #aside-title {
-          width:47%;
      }
 
      /*Bloc contenant les liens de la partie aside */
@@ -804,7 +793,7 @@ a:hover {
 
      /*Deuxième section de la page */
      #activités {
-          width: 97%;
+          width:97%;
      }
 
      /*Div contenant les liens de la deuxième section de la page */
@@ -820,7 +809,7 @@ a:hover {
           margin-bottom: 20px;
           padding-bottom: 30px;
      }
-    
+     
      /*Quatre liens dans la partie activités */
      .small-box {
           width: 45%;
@@ -828,6 +817,7 @@ a:hover {
           margin-bottom: 20px;
      }
 
+     /*Pied de la page */
      footer {
           width:100%;
      }
